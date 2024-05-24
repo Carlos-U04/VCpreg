@@ -1,0 +1,58 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente de la página */
+    background: url('ima.jpg') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el contenedor principal de FAQ */
+.faq-container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Margen superior e inferior y centrado horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: paleturquoise255, 255, 0.9); /* Fondo semitransparente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos para el título */
+h1 {
+    text-align: center; /* Centrado del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para cada item de FAQ */
+.faq-item {
+    margin-bottom: 10px; /* Espaciado inferior entre items */
+}
+
+/* Estilos para las preguntas (botones) */
+.faq-question {
+    width: 100%; /* Ancho completo del contenedor */
+    text-align: left; /* Alineación del texto a la izquierda */
+    padding: 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    outline: none; /* Sin borde de enfoque */
+    background-color: #f1f1f1; /* Color de fondo */
+    cursor: pointer; /* Cursor de mano para indicar clic */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para las respuestas */
+.faq-answer {
+    display: none; /* Inicialmente oculto */
+    padding: 15px; /* Espaciado interno */
+    background-color: #fafafa; /* Color de fondo */
+    border-top: 1px solid #ddd; /* Borde superior */
+    border-radius: 0 0 4px 4px; /* Bordes redondeados inferiores */
+}
+
+/* Mostrar la respuesta cuando la pregunta está activa */
+.faq-question.active + .faq-answer {
+    display: block; /* Mostrar respuesta */
+}
